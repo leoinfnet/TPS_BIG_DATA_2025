@@ -1,0 +1,11 @@
+src,dst,relacao
+r1,m1,protege
+r1,s1,protege
+m1,s1,amigo
+r2,m2,protege
+b1,r1,amigo
+t1,b1,traiu
+p1,r1,inimigo
+r1,r2,conhece
+m1,m2,conhece
+r2,t1,suspeita
