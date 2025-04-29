@@ -1,0 +1,9 @@
+src,dst,relacao
+r1,m1,protege
+r2,m2,protege
+r3,m3,protege
+m1,p1,desconfia
+m2,p1,desconfia
+m3,p1,desconfia
+p1,r1,controla
+p1,r2,controla
