@@ -1,0 +1,26 @@
+
+version: '3.8'
+
+services:
+  mongo:
+    image: leogloriainfnet/aurora-mongo
+    container_name: aurora-mongo
+    ports:
+       - "27017:27017"
+    networks: 
+      - aurora-net
+  postgres:
+    image: leogloriainfnet/aurora-postgres
+    container_name: pg-aurora
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_DB: aurora
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: admin
+    networks:
+      - aurora-net
+
+networks:
+  aurora-net:
+    driver: bridge
